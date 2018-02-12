@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ccc;
+}
+.wrapper{
+    min-width: 320px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px 20px 100px;
+    background-color: #fff;
+}
+form{
+    width: 80%;
+    margin: 0 auto;
+}
+.caption{
+    font-style: italic;
+}
+.star{
+    color: red;
+}
+fieldset{
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 18px;
+}
+p{
+    padding: 5px 0;
+}
+label{
+    display: inline-block;
+    width: 110px;
+    vertical-align: top;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select,
+textarea{
+    width: 200px;
+}
+.animals{
+    display: inline-block;
+}
+input[type="submit"]{
+    padding: 10px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: #b2b8bb;
+}

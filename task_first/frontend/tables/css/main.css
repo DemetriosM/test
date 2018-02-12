@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    min-width: 320px;
+    padding: 20px 20px 100px;
+    background-color: #fff;
+}
+table{
+    margin: 30px auto;
+}
+th,
+td{
+    padding: 0 5px;
+    border: 1px solid #000;
+    line-height: 24px;
+}

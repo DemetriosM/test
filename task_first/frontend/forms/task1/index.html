@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tables</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <main class="wrapper">
+        <form name="applicant" action="#">
+            <h1>Форма заявки на работу в зоопарке</h1>
+            <p class="caption">Пожалуйста, заполните форму. Обязательные поля помечены <span class="star">*</span></p>
+            <fieldset>
+                <legend>Контактная информация</legend>
+                <p>
+                    <label for="applicant-name">Имя <span class="star">*</span></label>
+                    <input type="text" id="applicant-name" name="applicant-name" required>
+                </p>
+                <p>
+                    <label for="applicant-tel">Телефон</label>
+                    <input type="number" id="applicant-tel" name="applicant-tel">
+                </p>
+                <p>
+                    <label for="applicant-email">Email <span class="star">*</span></label>
+                    <input type="email" id="applicant-email" name="applicant-email" required>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Персональная информация</legend>
+                <p>
+                    <label for="applicant-age">Возраст <span class="star">*</span></label>
+                    <input type="number" id="applicant-age" name="applicant-age" required min="18" max="90">
+                </p>
+                <p>
+                    <label for="applicant-sex">Пол</label>
+                    <select name="applicant-sex" id="applicant-sex" size="1">
+                        <option value="women">Женщина</option>
+                        <option value="men">Мужчина</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="applicant-skill">Перечислите личные качества <span class="star">*</span></label>
+                    <textarea id="applicant-skill" name="applicant-skill" rows="5" cols="35"></textarea>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Выберите ваших любимых ивотных</legend>
+                <p class="animals">
+                    <input type="checkbox" name="applicant-zebra" id="applicant-zebra">
+                    <label for="applicant-zebra">Зебра</label>
+                </p>
+                <p class="animals">
+                    <input type="checkbox" name="applicant-cat" id="applicant-cat">
+                    <label for="applicant-cat">Кошак</label>
+                </p>
+                <p class="animals">
+                    <input type="checkbox" name="applicant-anaconda" id="applicant-anaconda">
+                    <label for="applicant-anaconda">Анаконда</label>
+                </p>
+                <p class="animals">
+                    <input type="checkbox" name="applicant-human" id="applicant-human">
+                    <label for="applicant-human">Человек</label>
+                </p>
+                <p class="animals">
+                    <input type="checkbox" name="applicant-elephant" id="applicant-elephant">
+                    <label for="applicant-elephant">Слон</label>
+                </p>
+                <p class="animals">
+                    <input type="checkbox" name="applicant-antelope" id="applicant-antelope">
+                    <label for="applicant-antelope">Антилопа</label>
+                </p>
+                <p class="animals">
+                    <input type="checkbox" name="applicant-dove" id="applicant-dove">
+                    <label for="applicant-dove">Голубь</label>
+                </p>
+                <p class="animals">
+                    <input type="checkbox" name="applicant-crab" id="applicant-crab">
+                    <label for="applicant-crab">Краб</label>
+                </p>
+            </fieldset>
+            <input type="submit" value="Отправить информацию">
+        </form>
+        
+    </main>
+</body>
+</html>

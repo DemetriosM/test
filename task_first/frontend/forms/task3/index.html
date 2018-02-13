@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="img/logo.png" alt="logo">
+        </header>
+        <main>
+            <form class="form-login" name="login" action="http://rigtman.p.ht/iwd/contest.php" method="POST">
+                <div class="form-login__background">
+                    <h4 class="form-login__header">Login to your account</h4>
+                    <div class="form-login__main">
+                        <p>
+                            <label for="login-name">
+                                <img src="img/head.png" alt="head">
+                            </label>
+                            <input type="text" id="login-name" name="name" placeholder="Username or Email" required>
+                        </p>
+                        <p>
+                            <label for="login-password">
+                                <img src="img/lock.png" alt="lock">
+                            </label>
+                            <input type="password" id="login-password" name="password" placeholder="Password" required>
+                        </p>
+                        <input class="form-login__submit" type="submit" value="login">
+                    </div>
+                    <div class="form-login__footer">
+                        <input type="checkbox" name="remember" id="login-remember" checked>
+                        <label for="login-remember">Rememder Me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer>Copyright (c) 2014. Created by LunarPixel.</footer>
+    </div>
+</body>
+</html>

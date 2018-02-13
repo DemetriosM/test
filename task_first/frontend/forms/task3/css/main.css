@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background-color: #31302b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+header,
+footer{
+    height: 70px;
+    padding: 7px;
+    text-align: center;
+}
+footer{
+    line-height: 70px;
+    color: #828078;
+}
+.form-login{
+    width: 385px;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 4px;
+}
+.form-login__background{
+    background-color: #fff;
+    border-radius: 3px;
+}
+.form-login__header,
+.form-login .form-login__submit{
+    background-color: #f2672e;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.form-login__header{
+    line-height: 52px;
+    text-align: center;
+}
+.form-login__main,
+.form-login__footer{ 
+    width: 270px;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+.form-login__main p{
+    margin: 20px auto;
+    vertical-align: top;
+}
+.form-login__main label{
+    display: inline-block;
+    line-height: 40px;
+    width: 40px;
+    background-color: rgba(49, 48, 43, .9);
+    text-align: center;
+    vertical-align: bottom;
+}
+.form-login__main input{
+    display: inline-block;
+    width: 230px;
+    height: 40px;
+    border: 0;
+    padding: 10px;
+    margin-left: -5px;
+    background-color: #f7f3eb;
+    outline: 0;
+    box-sizing: border-box;
+}
+.form-login__main input::placeholder{
+    color: #ded9cf;
+}
+input.form-login__submit{
+    width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.form-login__footer{ 
+    height: 40px;
+    width: 270px;
+    padding: 10px 0 20px;
+    margin: 0 auto;
+    color: #a7a599;
+    font-size: 12px;
+}
+.form-login__footer label{
+    vertical-align: top;
+    cursor: pointer;
+}
+.form-login__footer{
+    vertical-align: top;
+}
+.form-login__footer a{
+    float: right;
+    color: #a7a599;
+    font-style: italic;
+}

@@ -8,7 +8,7 @@ html{
 body{
     height: 100%;
     background-color: #31302b;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 .wrapper{
     height: 100%;
@@ -29,6 +29,7 @@ footer{
 footer{
     line-height: 70px;
     color: #828078;
+	font-size: 12px;
 }
 .form-login{
     width: 385px;

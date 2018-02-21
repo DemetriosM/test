@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Variables</title>
+</head>
+<body>
+    <h3>Переменные и строки</h3>
+    <script>
+        var days = 365;
+        var planet = "Земля";
+        var population = "7 млрд.";
+        var star = "Солнца";
+
+        document.write('<p><b>1.</b> Мы живем на планете ' + planet +
+        ', она делает один оборот вокруг ' + star + ' за ' + days +
+        ' дней. Население нашей планеты составляет примерно ' + population + ' человек.</p></br>');
+    </script>
+    <script>
+        var a = 5;
+        var b, c;
+
+        b = c = (a*5)/2;
+        console.log(a, b, c);
+
+        document.write('<p><b>2.</b> Объявляется переменная <b>а</b>, ей присваевается значение <b>5</b>. '+
+        'Объявляются переменные <b>b</b> и <b>c</b>. Производится умножение <b>а</b> на 5, '+
+        'результат присваевается переменной <b>b</b>. Производится деление переменной <b>b</b> на 2, '+
+        'результат присваевается переменной <b>с</b>, затем значение переменной <b>с</b> '+
+        'присваевается переменной <b>b</b>.</p><p>В коде из задания, два выражения: '+
+        '"b = a * 5;" и "b = c = b/2;", можно заменить одним - "b = c = (a*5)/2;"</p></br>');
+    </script>
+    <script>
+        String.prototype.byteLength = function(){
+           var str = this, length = str.length, count = 0, i = 0, ch = 0;
+           for(i; i < length; i++){
+             ch = str.charCodeAt(i);
+             if(ch <= 127){
+                count++;
+             }else if(ch <= 2047){
+                count += 2;
+             }else if(ch <= 65535){
+                count += 3;
+             }   
+          }
+          return count;
+        };
+        var str = 'Найдите количество Килобайт (KB) и Байт (B) в данном сообщении.';
+        document.write('<p><b>3.</b> ( '+ str +' )<p><p>Байт - '+ str.byteLength() +'</p><p>Килобайт - '+ str.byteLength()/1024 +
+            '</p><p>Подсчет произведен исходя из следующего: если код символа (Юникод) меньше 128 - это 1 байт; '+
+                'если меньше 2048 - 2 байта; меньше 65536 - 3 байта.</p>');
+        
+    </script>
+</body>
+</html>

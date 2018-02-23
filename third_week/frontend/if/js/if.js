@@ -1,12 +1,6 @@
 // Задания 1 и 2
 document.write('<p><b>Задания 1 и 2</b></p>');
 
-var students = ["Сергей", "Матвей", "Лейла", "Алина",  "Иоган"];
-showMessageDependingOnArray(students);
-
-students = ["Дмитрий", "Алексей", "Петр", "Виктор"];
-showMessageDependingOnArray(students);
-
 function showMessageDependingOnArray(arr) {
     document.write('<p>Массив ['+ arr +']</p>');
     if (arr.length >= 3) {
@@ -21,6 +15,12 @@ function showMessageDependingOnArray(arr) {
         document.write('Этот массив мне не подходит.</br>');
     }
 }
+
+var students = ["Сергей", "Матвей", "Лейла", "Алина",  "Иоган"];
+showMessageDependingOnArray(students);
+
+students = ["Дмитрий", "Алексей", "Петр", "Виктор"];
+showMessageDependingOnArray(students);
 
 // Задание 3
 document.write('</br><p><b>Задание 3</b></p>');
@@ -45,20 +45,14 @@ instructionForAction(trafficLightColor);
 
 // Задание 4
 document.write('</br></br><p><b>Задание 4</b></p>');
+
 var a=1;
 var b=8;
-
 var result = (a + b < 4) ? 'Мало' : 'Много';
 document.write(result);
 
 // Задание 5
 document.write('</br></br><p><b>Задание 5</b></p>');
-var login = 'Вася';
-showMessage(login);
-login = 'Директор';
-showMessage(login);
-login = '';
-showMessage(login);
 
 function showMessage(login) {
 var message = (login == 'Вася') ? 'Привет' :
@@ -66,3 +60,10 @@ var message = (login == 'Вася') ? 'Привет' :
               (login == '') ? 'Нет логина' : '';
 document.write('<p> Логин: '+ login +'. Сообщение: '+ message +'.</p>');
 }
+
+var login = 'Вася';
+showMessage(login);
+login = 'Директор';
+showMessage(login);
+login = '';
+showMessage(login);

@@ -1,6 +1,1 @@
-папки
-new.loc - файлы сайта
-database - база данных
-
-админка wp - логин: admin, пароль: admin-dm
-база данных - логин root, пароля нет
+﻿backend is on hosting

@@ -1,2 +1,0 @@
-<h2>Images</h2>
-<p><img src="<?= get_template_directory_uri().'/images/img1.jpg' ?>"><img src="<?= get_template_directory_uri().'/images/img2.jpg' ?>"><img src="<?= get_template_directory_uri().'/images/img3.jpg' ?>"><img src="<?= get_template_directory_uri().'/images/img4.jpg' ?>"></p>
